@@ -24,11 +24,13 @@ const CharacterList = () => {
   }, [query]);
 
   return (
-    <section className="character-list">
+    <section>
       <SearchForm query={query} handleSearch={handleSearch} />
-      {data.map(i => (
-        <CharacterCard key={i.id} i={i} />
-      ))}
+      <div className="character-list">
+        {data.map(i => (
+          <CharacterCard key={i.id} i={i} />
+        ))}
+      </div>
     </section>
   );
 };
