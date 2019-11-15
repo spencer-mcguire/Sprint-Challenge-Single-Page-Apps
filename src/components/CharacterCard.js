@@ -1,7 +1,7 @@
 import React from "react";
 
 const CharacterCard = props => {
-  const { name, status, species, image, id } = props.i;
+  const { name, status, species, image } = props.i;
   return (
     <div>
       <img src={image} alt={name} />
