@@ -14,7 +14,7 @@ const App = () => {
         path="/characters"
         render={props => <CharacterList {...props} />}
       />
-      <Route path="/locations" render={props => <LocationsList {...props} />} />
+      <Route path="/location" render={props => <LocationsList {...props} />} />
     </main>
   );
 };

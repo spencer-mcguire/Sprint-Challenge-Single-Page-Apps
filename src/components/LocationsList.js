@@ -4,13 +4,13 @@ import LocationCard from "./LocationCard";
 
 const LocationsList = () => {
   const [data, setData] = useState([]);
-  console.log(data);
 
   useEffect(() => {
     axios
       .get("https://rickandmortyapi.com/api/location/")
       .then(res => {
-        setData(res.results);
+        console.log(res);
+        setData(res.data.results);
       })
       .catch(err => console.log(err));
   }, []);
