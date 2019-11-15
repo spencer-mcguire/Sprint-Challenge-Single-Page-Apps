@@ -6,7 +6,7 @@ import SearchForm from "./SearchForm";
 const CharacterList = () => {
   const [data, setdata] = useState([]);
   const [query, setQuery] = useState("");
-  // console.log(query);
+  console.log(data);
   const handleSearch = e => {
     setQuery(e.target.value);
   };

@@ -3,6 +3,7 @@ import { Route } from "react-router-dom";
 import Header from "./components/Header.js";
 import WelcomePage from "./components/WelcomePage";
 import CharacterList from "./components/CharacterList";
+import LocationsList from "./components/LocationsList";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         path="/characters"
         render={props => <CharacterList {...props} />}
       />
+      <Route path="/locations" render={props => <LocationsList {...props} />} />
     </main>
   );
 };

@@ -17,6 +17,10 @@ const WelcomePage = props => {
     props.history.push("/characters");
   };
 
+  const routeToloc = () => {
+    props.history.push("/location");
+  };
+
   return (
     <section className="welcome-page">
       <header>
@@ -29,6 +33,7 @@ const WelcomePage = props => {
       </header>
       <div className="home-button">
         <Button onClick={routeToChar}>Checkout the Characters</Button>
+        <Button onClick={routeToloc}>Checkout Locations</Button>
       </div>
     </section>
   );

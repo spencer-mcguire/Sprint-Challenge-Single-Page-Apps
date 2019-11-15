@@ -11,6 +11,10 @@ const CharacterCard = props => {
     border-radius: 4px;
     text-align: center;
   `;
+  // var str;
+  // if (status === "Alive") {
+  //   str = status.fontcolor("green");
+  // }
 
   return (
     <Container>
