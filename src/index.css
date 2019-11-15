@@ -22,6 +22,11 @@ main {
   justify-content: space-evenly;
 }
 
+input {
+  padding: 5px 40px;
+  border-radius: 4px;
+}
+
 .page-view {
   min-height: 40vh;
 }
@@ -29,13 +34,19 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
+
 .main-img {
   display: block;
   border-radius: 100%;
   margin: 0 auto;
-} */
+}
 
 header h1 {
   text-align: center;
+}
+
+.home-button {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
 }
